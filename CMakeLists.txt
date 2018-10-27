@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(TEMPLATE)
+project(GOAL_DISTANCE_COST)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -49,11 +49,11 @@ add_subdirectory(src)
 
 # Main executable
 
-add_executable(Template
+add_executable(GoalDistanceCost
     ${CMAKE_SOURCE_DIR}/src/main.cpp
     )
 
-target_link_libraries(Template core)
+target_link_libraries(GoalDistanceCost core)
 
 
 # Tests

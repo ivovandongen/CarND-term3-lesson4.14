@@ -1,10 +1,9 @@
 #include <test.hpp>
 
-#include <core.hpp>
+#include <cost.h>
 
 #include <vector>
 
-TEST(Core, BasicTest) {
-    Core core;
+TEST(Cost, BasicTest) {
     ASSERT_TRUE(true);
 }
