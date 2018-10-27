@@ -13,8 +13,5 @@ float goal_distance_cost(int goal_lane, int intended_lane, int final_lane, float
     goal lane also becomes larger as vehicle approaches the goal.
     */
 
-    //TODO: Replace cost = 0 with an appropriate cost function.
-    float cost = 0;
-
-    return cost;
+    return 1 - exp(-(abs(.2f * goal_lane - intended_lane - final_lane) / distance_to_goal));
 }
